@@ -16,7 +16,7 @@ export function Home() {
   }
 
   useEffect(() => {
-    // loadQrCode();
+    loadQrCode();
   }, []);
 
   return (

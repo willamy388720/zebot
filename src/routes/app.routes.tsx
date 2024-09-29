@@ -8,6 +8,8 @@ import { Home } from "@pages/Home";
 import { Profile } from "@pages/Profile";
 import { Blacklist } from "@pages/Blacklist";
 import { Messages } from "@pages/Messages";
+import { PositiveDecision } from "@pages/PositiveDecision";
+import { NegativeDecision } from "@pages/NegativeDecision";
 
 export function AppRouter() {
   return (
@@ -27,6 +29,11 @@ export function AppRouter() {
       </Route>
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/positiveDecision/:info" element={<PositiveDecision />} />
+      <Route
+        path="/negativeDecision/:maliciousPhoneNumber"
+        element={<NegativeDecision />}
+      />
     </Routes>
   );
 }
